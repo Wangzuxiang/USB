@@ -1,0 +1,25 @@
+---- UserToPMABufferCopy Matches (24 in 7 files) ----
+Hw_config.c (c:\users\wangzx\desktop\usb_com\usb):    UserToPMABufferCopy(&USART_Rx_Buffer[USB_Tx_ptr], ENDP1_TXADDR, USB_Tx_length);
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):USB_LP_CAN1_RX0_IRQHandler &rArr; USB_Istr &rArr; CTR_LP &rArr; Setup0_Process &rArr; Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = Setup0_Process &rArr; Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = In0_Process &rArr; DataStageIn &rArr; UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = CTR_LP &rArr; Setup0_Process &rArr; Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<P><STRONG><a name="[8b]"></a>UserToPMABufferCopy</STRONG> (Thumb, 52 bytes, Stack size 20 bytes, usb_mem.o(.text))
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = USB_LP_CAN1_RX0_IRQHandler &rArr; USB_Istr &rArr; CTR_LP &rArr; Setup0_Process &rArr; Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = Handle_USBAsynchXfer &rArr; UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = EP1_IN_Callback &rArr; UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = SOF_Callback &rArr; Handle_USBAsynchXfer &rArr; UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = USB_Istr &rArr; CTR_LP &rArr; Setup0_Process &rArr; Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = DataStageIn &rArr; UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserToPMABufferCopy
+USB_Com.htm (c:\users\wangzx\desktop\usb_com\proj\out):<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+Usb_core.c (c:\users\wangzx\desktop\usb_com\lib\stm32_usb-fs-device_driver\src):  UserToPMABufferCopy(DataBuffer, GetEPTxAddr(ENDP0), Length);
+Usb_endp.c (c:\users\wangzx\desktop\usb_com\usb):      UserToPMABufferCopy(&USART_Rx_Buffer[USB_Tx_ptr], ENDP1_TXADDR, USB_Tx_length);
+Usb_mem.c (c:\users\wangzx\desktop\usb_com\lib\stm32_usb-fs-device_driver\src):* Function Name  : UserToPMABufferCopy
+Usb_mem.c (c:\users\wangzx\desktop\usb_com\lib\stm32_usb-fs-device_driver\src):void UserToPMABufferCopy(uint8_t *pbUsrBuf, uint16_t wPMABufAddr, uint16_t wNBytes)
+Usb_mem.h (c:\users\wangzx\desktop\usb_com\lib\stm32_usb-fs-device_driver\inc):void UserToPMABufferCopy(uint8_t *pbUsrBuf, uint16_t wPMABufAddr, uint16_t wNBytes);
+Usb_sil.c (c:\users\wangzx\desktop\usb_com\lib\stm32_usb-fs-device_driver\src):  UserToPMABufferCopy(pBufferPointer, GetEPTxAddr(bEpAddr & 0x7F), wBufferSize);
